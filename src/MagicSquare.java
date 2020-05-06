@@ -74,8 +74,8 @@ public class MagicSquare {
      */
     public boolean isMagicSquare() {
         // <<< Complete the code >>>
-        int row= grid.length;
-        int col= grid[row].length;
+        int row= grid.length-1;
+        int col= grid[row].length-1;
         if(rowSum(row)==colSum(col) && colSum(col)== upDiagSum() && upDiagSum()== downDiagSum()){
             return true;
         }
